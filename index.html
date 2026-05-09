@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yusuf | Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Professional portfolio of Yusuf - Web Developer & Data Analyst">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="loader">
+  <div class="spinner"></div>
+    </div>
+
+    <button id="topBtn">↑</button>
+
+<!-- HEADER -->
+<header>
+  <nav>
+    <div class="logo">Fabulous</div>
+
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <i class="fas fa-moon" id="darkMode"></i>
+      <i class="fas fa-bars" id="menuBtn"></i>
+    </div>
+  </nav>
+</header>
+
+<div class="filter">
+  <button onclick="filter('all')">All</button>
+  <button onclick="filter('web')">Web</button>
+  <button onclick="filter('data')">Data</button>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+  <div class="hero-text">
+    <h1>Hi, I'm Abdulsalam Yusuf</h1>
+
+    <p class="typing"></p>
+
+    <a href="assets/cv.pdf" download class="btn">Download CV</a>
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>Professional Web Developer & Data Analyst focused on building scalable and responsive web applications.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>Excel</div>
+    <div>SQL</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h3>Data Dashboard</h3>
+      <p>Excel + Power BI analytics project</p>
+      <a href="#">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>Responsive developer portfolio</p>
+      <a href="#">Live Demo</a>
+    </div>
+
+    <div class="project-card web">...</div>
+    <div class="project-card data">...</div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+
+  <h2>Contact</h2>
+
+  <form action="https://formspree.io/f/your-id" method="POST">
+
+    <input type="text" name="name" placeholder="Full Name" required>
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+    <p id="success"></p>
+  </form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Yusuf. Built with HTML, CSS & JavaScript</p>
+</footer>
+
+<script src="JS/app.js"></script>
+
+</body>
+</html>
