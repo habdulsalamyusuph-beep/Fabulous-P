@@ -88,12 +88,27 @@ nav{
 
 /* LOGO */
 
-.logo{
+/* .logo{
   font-size:28px;
+  font-weight:700;
+  color:var(--primary);
+} */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:24px;
   font-weight:700;
   color:var(--primary);
 }
 
+.logo img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid var(--primary);
+}
 /* NAV MENU */
 
 nav ul{
